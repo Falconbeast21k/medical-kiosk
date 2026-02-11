@@ -5,3 +5,9 @@ node_modules
 server/
 database/
 .vscode
+.gitignore
+README.md
+DEPLOYMENT.md
+VERCEL_DEPLOYMENT.md
+VERCEL_SETUP_COMPLETE.md
+

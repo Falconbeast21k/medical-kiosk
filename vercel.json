@@ -1,18 +1,5 @@
 {
-  "buildCommand": "npm run build --workspace=client",
+  "buildCommand": "cd client && npm install && npm run build",
   "installCommand": "npm install",
-  "outputDirectory": "client/dist",
-  "public": true,
-  "framework": "vite",
-  "env": {
-    "VITE_API_URL": "https://medical-kiosk-backend.onrender.com"
-  },
-  "headers": [
-    {
-      "source": "/api/(.*)",
-      "headers": [
-        { "key": "Content-Type", "value": "application/json" }
-      ]
-    }
-  ]
+  "outputDirectory": "client/dist"
 }
