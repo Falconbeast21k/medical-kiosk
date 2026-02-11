@@ -3,7 +3,6 @@
   "installCommand": "npm install",
   "outputDirectory": "client/dist",
   "public": true,
-  "root": "client",
   "framework": "vite",
   "env": {
     "VITE_API_URL": "https://medical-kiosk-backend.onrender.com"
