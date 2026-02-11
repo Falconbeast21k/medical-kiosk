@@ -12,7 +12,7 @@ export async function initializeDatabase() {
   if (db) return db;
 
   db = await open({
-    filename: path.join(__dirname, '../../database/medical_kiosk.db'),
+    filename: path.join(__dirname, '../database/medical_kiosk.db'),
     driver: sqlite3.Database
   });
 

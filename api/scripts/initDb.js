@@ -1,4 +1,4 @@
-import { initializeDatabase } from '../src/db.js';
+import { initializeDatabase } from '../db.js';
 
 const schema = `
 -- Users/Admin Table

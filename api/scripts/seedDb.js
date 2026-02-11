@@ -1,4 +1,4 @@
-import { initializeDatabase } from '../src/db.js';
+import { initializeDatabase } from '../db.js';
 import { v4 as uuidv4 } from 'uuid';
 import bcryptjs from 'bcryptjs';
 
