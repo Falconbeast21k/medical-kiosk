@@ -1,0 +1,28 @@
+{
+  "name": "medical-kiosk-backend",
+  "description": "Medical Kiosk REST API Backend",
+  "repository": "https://github.com/Falconbeast21k/medical-kiosk",
+  "keywords": ["medical", "kiosk", "healthcare", "express"],
+  "buildCommand": "npm install && npm run db:init && npm run db:seed",
+  "startCommand": "npm start",
+  "env": {
+    "NODE_ENV": {
+      "value": "production"
+    },
+    "PORT": {
+      "value": "5000"
+    },
+    "DATABASE_PATH": {
+      "value": "/var/data/medical_kiosk.db"
+    },
+    "ADMIN_PASSWORD": {
+      "description": "Admin password for kiosk",
+      "value": "admin123"
+    },
+    "JWT_SECRET": {
+      "description": "JWT secret key",
+      "generateValue": true
+    }
+  },
+  "plan": "free"
+}

@@ -1,0 +1,22 @@
+{
+  "buildCommand": "npm install && npm run build --workspace=client",
+  "installCommand": "npm run install-all",
+  "outputDirectory": "client/dist",
+  "public": true,
+  "env": {
+    "VITE_API_URL": {
+      "description": "Backend API URL for production"
+    }
+  },
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://your-backend-url.com/api/:path*"
+    }
+  ]
+}
